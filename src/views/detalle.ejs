@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <%- include('./partials/head') %>
+  <body>
+    <%- include('./partials/nav') %>
+    <%- include('./partials/header') %>
+
+    <div class="detalle-container">
+        <img src="<%= id.img %>" alt="">      
+        <div class="text">
+            <h4 class="detallado"><%= id.name %> </h4><h5 class="price"><%= id.price %> </h5>
+            <% id.description == undefined ? 'Plato típico' : id.description %>
+            <p class="ps-text-grey detallado"><%= id.description %> </p>
+        </div>
+    </div>     
+
+
+      <%- include('./partials/footer') %>
+
+    </div>
+  </body>
+</html>
